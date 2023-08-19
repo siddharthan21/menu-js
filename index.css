@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.top{
+    position: relative;
+    background-image: url("https://monogramcc.com/static/9a0b554db1990565457610c5f83b3ad7/91943/shop_cta_xl_896f6b8270.webp");
+    height: 85vh;
+    display: flex;
+    background-repeat: no-repeat;
+    justify-content: center;
+    background-size: cover;
+}
+.top::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: inset 0 0 0 #000000,inset 0 0 250px #000000;
+}
+.head{
+    display: flex;
+    color: #ff8b68;
+    justify-content: space-between;
+    background-color: #1a2456;
+    padding: 10px;
+    position: absolute;
+    width: 95%;
+    top: 10px;
+    border-radius: 5px;
+    z-index: 3;
+}
+.head-items{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+}
+.hiden{
+    display: none;
+}
+.main-head{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #ff8b68;
+    z-index: 3;
+    width: 30%;
+}
+.main-head h1{
+    word-spacing: 10px;
+    letter-spacing: 5px;
+    line-height: 3rem;
+}
+
+.scrol-left{
+    transition: width 5s;    
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right:  0;
+    /* top: 80px; */
+    gap: 10px;
+    background-color: #ff8b68;
+    height: 100%;
+    z-index: 3;
+    width: 10rem;
+    text-align: start;
+    font-family: 'Times New Roman';
+    padding-left: 10px;
+    border-radius: 5px;
+}
+.scrol-left>p:hover{
+    color: #1a2456;
+    z-index: 6;
+}
+.scrol-left .item-1{
+    padding: 3rem 0 0 0;
+    
+}
+.scrol-left p {
+    padding-top: 15px;
+}
+.hide-scroll-left:hover{
+    cursor: pointer;
+}
+.hide-scroll-left{
+    text-align: end;
+}
+
+@media only screen and (max-width:1350px) and (min-width:750px){
+    .main-head{
+        width: 60%;
+    }
+
+
+}
+@media(max-width:750px){
+    .head-items{
+        display: none;
+    }
+        .hiden{
+            display: flex;
+        }
+    .main-head{
+        width: 90%;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    .logo{
+        font-size: 10px;
+    }
+}
+@media(max-width:280px){
+    /* h1{
+        font-size: 1rem;
+    }
+    .head-items{
+        display: none;
+    }
+    .hiden{
+        display: flex;
+    } */
+}
